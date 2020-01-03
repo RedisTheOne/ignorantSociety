@@ -1,8 +1,7 @@
-
-
 .post_content {
     width: 80vw;
     margin: auto;
+    margin-top: 70px;
 }
 
 .photo {
@@ -46,3 +45,20 @@ form input {
     margin: auto;
     outline-color: #3e3e3e;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <textarea name="" id="problem" cols="30" rows="10"></textarea>
+        <input type="text" name="" id="input_2">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const text = document.getElementById("problem").value;
+            const input_2 = document.getElementById("input_2").value;
+            if(text.length > 2 && input_2.length) {
+                alert("Ka Fut");
+            } else {
+                alert("Ska Fut");
+            }
+        })
+    </script>
+</body>
+</html>

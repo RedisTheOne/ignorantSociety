@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Post</title>
+        <style>
+            * {
+                margin: 0px;
+                top: 0;
+                left: 0;
+                font-family: verdana;
+            }
+
+            .navbar {
+                width: 100%;
+                background: #ce8b54;
+                display: flex;
+            }
+
+            .navbar a {
+                margin: 0px;
+                padding: 20px; 
+                font-size: 20px;
+                text-decoration: none;
+                color: #fff;
+                transition: 0.5s;
+                font-size: 17px;
+            }
+
+            .navbar .left {
+                padding-top: 20px;
+                margin: 0px;
+                flex: 1;
+            }
+
+            .left a {
+                padding: 17px;
+            }
+        </style>
+        <link rel="stylesheet" href="/posts/styles/style.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="left">
+                <a href="/home">Home</a>
+                <a href="/posts">Posts</a>
+                <a href="#">News</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <a href="/login/login.html" style="float: right">Log In</a>
+        </div>
+        <div class="post_content">
+          <br>
+          <h1 style="margin-bottom: 5px;">Posti i katert</h1>
+          <p style="margin-bottom: 5px;">Ky eshte postimi i katert</p>
+          <center>
+                <img src="https://cdn.pixabay.com/photo/2019/08/19/07/45/pets-4415649__340.jpg" class="photo" />
+          </center>
+          <div class="bar">
+            <div class="bar" style="flex: 1;">
+                <label id="likes" style="font-size: 24px; margin-right: 5px;">0</label>
+                <img src="./like.png" id="like_btn" style="cursor: pointer; width: 25px; height: 25px;" />
+            </div>
+            <div class="bar" style="padding-top: 0px;">
+                <label id="comments_label" style="font-size: 24px; margin-right: 5px;">0</label>
+                <img src="./comment.png" id="comment_btn" style="cursor: pointer; width: 25px; height: 25px; padding-top: 5px;" />
+            </div>
+          </div>
+        </div>
+        <div id="comments">
+
+        </div>
+        <!-- <div class="comment">
+            AAA
+        </div> -->
+        <form>
+            <input type="text" id="comment" placeholder="Comment:">
+        </form>
+        <script src="app.js"></script>
+    </body>
+</html>

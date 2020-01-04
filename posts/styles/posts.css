@@ -4,6 +4,30 @@
     left: 0;
     font-family: verdana;
     scroll-behavior: smooth;
+    overflow: hidden;
+    animation: 1s all forwards 2s;
+}
+
+@keyframes all {
+    100% {overflow: initial;}
+}
+
+
+.first {
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ce8b54;
+    flex-direction: column;
+    justify-content: center;
+    animation: 0.5s fadeOut forwards;
+    animation-delay: 1s;
+}
+
+.second {
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 1s;
 }
 
 .navbar {
@@ -38,8 +62,8 @@
     width: 100%;
     margin: auto;
     opacity: 0;
-    animation: fadeIn 0.5s ease-in-out 1.5s;
-    animation-fill-mode: forwards;  
+    animation: fadeIn 0.5s ease-in-out 2.5s;
+    animation-fill-mode: forwards; 
     z-index: 0;
 }
 
@@ -122,7 +146,6 @@
 .side_bar {
     position: fixed;
     margin-top: 80px;
-    min-height: 30vh;
     width: 265px;
     margin-left: 20px;
     background: #3e3e3e3e;
@@ -134,7 +157,7 @@
     width: 80px;
     margin-top: -15px;
     margin-left: 92.5px;
-    animation: fadeIn 0.5s ease-in-out 1.5s;
+    animation: fadeIn 0.5s ease-in-out 2.5s;
     animation-fill-mode: forwards;  
 }
 
@@ -158,17 +181,17 @@
 
 
 #h_1 {
-    animation: moveAnime 0.5s ease-in-out 0s;
+    animation: moveAnime 0.5s ease-in-out 1s;
     animation-fill-mode: forwards;  
 }
 
 #h_2 {
-    animation: moveAnime 0.5s ease-in-out 0.5s;
+    animation: moveAnime 0.5s ease-in-out 1.5s;
     animation-fill-mode: forwards;  
 }
 
 #h_3 {
-    animation: moveAnime 0.5s ease-in-out 1s;
+    animation: moveAnime 0.5s ease-in-out 2s;
     animation-fill-mode: forwards;  
 }
 
@@ -178,4 +201,20 @@
 
 @keyframes fadeIn {
     100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    100% {opacity: 0;}
+}
+
+#posts_btn {
+    width: 200px;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px;
+    background: #3e3e3e;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
 }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+             * {
+                margin: 0px;
+                top: 0;
+                left: 0;
+                font-family: verdana;
+            }
+
+
+            .left a {
+                padding: 17px;
+            }
+
+            .navbar a:hover {
+                border-bottom-color: wheat;
+            }
+            /* KOLONAT */
+            .column {
+                float: left;
+                width: 50%;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+          }
+             p.solid {
+                border-style: solid;
+          }
+        </style>
+    </head>
+    <body style="background-color:#ffd9b3;">
+
+        <div class="first">
+            <button id="posts_btn">News</button>
+        </div>
+        <div class="second">
+            <div class="navbar">
+                <div class="left">
+                    <a href="/home/">Home</a>
+                    <a href="/posts/">Posts</a>
+                    <a href="/news/">News</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <a href="#" style="float: right">Log In</a>
+            </div>
+            <center style="padding-top: 70px;"><h1><strong>NEWS</strong></h1></center>
+
+            <div class="row">
+      <div class="column">
+        <center><p class="solid"><br>
+    
+            <img src="cat1.jpg" width="500" height="333"><br>
+    
+            <b><font size="5">The Right Diet for Senior Cats</font></b><br>
+            Cats’ physiology change as they grow older. Like us, they experience changes like grey hair, loss of sight and hearing as they grow older. The growth and evolution of their needs makes them require more hands-on care and a special diet for senior cats. As a pet owner, it’s important to be aware of your... <a style="text-decoration:none" href="Doc1.html">Read More</a><br>
+            <br>
+    
+        </p></center>
+    
+        <center><p class="solid"><br>
+    
+            <img src="dog1.jpg" width="500" height="333"><br>
+            <b><font size="5">10 Warning Signs of Cancer in Dogs</font></b><br>
+            Cancer is a word no person wants to hear from their doctor or veterinarian. But unfortunately, it is a common diagnosis in dogs. According to the National Canine Cancer Foundation (NCCF), cancer is detected in one in three dogs and is a leading cause of death in dogs over 10. It’s important that owners are aware... <a style="text-decoration:none" href="Doc3.html">Read More</a><br>
+            <br>
+    
+        </p></center>
+    
+        <center><p class="solid"><br>
+    
+            <img src="dog2.jpg" width="500" height="333"><br>
+            <b><font size="5">Airline Pet Requirements You Need to Know</font></b><br>
+            Pets on and off planes have been in the news a lot lately. Whether or not you have a pet for medical reasons, most airlines will allow your friend to travel with you. You just need to follow the specific airline pet requirements set by the airline you’re flying on. Each airline varies in its restrictions, but those... <a style="text-decoration:none" href="Doc5.html">Read More</a><br>
+            <br>
+    
+        </p></center>
+    
+      </div>
+    
+    
+      <div class="column">
+           <center><p class="solid"><br>
+    
+            <img src="cat2.jpg" width="500" height="333"><br>
+    
+            <b><font size="5">3 Tips for Traveling With Cats In a Car</font></b><br>
+            Traveling with cats in a car can be very difficult, especially if they are not used to being in a moving vehicle. Cats can become frightened and stressed very easily while outside the familiarity of their home. It may be challenging to travel with a cat, but it’s not impossible. If you can’t get a friend or neighbor... <a style="text-decoration:none" href="Doc2.html">Read More</a><br>
+            <br>
+    
+        </p></center>
+    
+        <center><p class="solid"><br>
+    
+            <img src="cat3.jpg" width="500" height="333"><br>
+            <b><font size="5">Thing as a Vegan Cat Diet?</font></b><br>
+            If you’re vegan, you probably want to put your cat on a similar diet. Don’t. A vegan cat diet doesn’t exist as cats need taurine from meat to survive. Anybody switching to a vegan diet wants the support of their family and pets to help them transition. Although a plant-based diet might be good for... <a style="text-decoration:none" href="Doc4.html">Read More</a><br>
+            <br>
+    
+        </p></center>
+    
+        <center><p class="solid"><br>
+    
+            <img src="dog3.jpg" width="500" height="333"><br>
+            <b><font size="5">Dealing with Ticks in Dogs</font></b><br>
+            One of the most common dilemmas faced by dog owners is dealing with ticks in dogs. They are almost invisible to the naked eye and are pretty hard to avoid as they inhabit many different environments. Ticks can cause some pretty serious diseases to your pet, so it’s important to identify and get rid of... <a style="text-decoration:none" href="Doc6.html">Read More</a><br>
+            <br>
+    
+        </p></center>
+    
+      </div>
+    </div>
+    <br>
+    <br>
+    <center><button onclick="yourFunction()">PREVIOUS PAGE</button> <button onclick="myFunction()">NEXT PAGE</button></center>
+    
+        </div>
+<script>
+function myFunction() {
+  alert("We Are Working On Other News Pages ...");
+}
+</script>
+<script>
+function yourFunction() {
+  alert("You Are At The First News Page !!!");
+}
+</script>
+<br>
+<br>
+<center><img id="myImage" onclick="changeImage()" src="Like.jpeg" width="90" height="90">
+
+        <script>
+        function changeImage() {
+        var image = document.getElementById('myImage');
+        if (image.src.match("Like")) {
+        image.src = "Dislike.jpeg";
+        } else {
+        image.src = "Like.jpeg";
+        }
+        }
+        </script></center>
+        <br>
+        <br>
+
+    </body>
+</html>

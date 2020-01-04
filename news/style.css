@@ -1,0 +1,94 @@
+.navbar {
+    width: 100%;
+    background: #ce8b54;
+    display: flex;
+    position: fixed;
+    z-index: 9;
+}
+
+.navbar a {
+    margin: 0px;
+    padding: 20px; 
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 17px;
+}
+
+.navbar .left {
+   padding-top: 20px;
+   margin: 0px;
+   flex: 1;
+}
+
+.left a {
+    padding: 17px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@keyframes fadeIn {
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    100% {opacity: 0;}
+}
+
+* {
+    margin: 0px;
+    top: 0;
+    left: 0;
+    font-family: verdana;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    animation: 1s all forwards 1.5s;
+}
+
+@keyframes all {
+    100% {overflow: initial;}
+}
+
+.first {
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ce8b54;
+    flex-direction: column;
+    justify-content: center;
+    animation: 0.5s fadeOut forwards;
+    animation-delay: 1s;
+}
+
+.second {
+    opacity: 0;
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 1.3s;
+}
+#posts_btn {
+    width: 200px;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px;
+    background: #3e3e3e;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+}

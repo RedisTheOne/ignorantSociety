@@ -27,7 +27,7 @@
 
 .second {
     animation: 0.5s fadeIn forwards;
-    animation-delay: 1s;
+    animation-delay: 1.3s;
 }
 
 .navbar {

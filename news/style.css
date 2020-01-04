@@ -56,12 +56,6 @@
     left: 0;
     font-family: verdana;
     scroll-behavior: smooth;
-    overflow: hidden;
-    animation: 1s all forwards 1.5s;
-}
-
-@keyframes all {
-    100% {overflow: initial;}
 }
 
 .first {

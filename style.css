@@ -58,3 +58,43 @@
     cursor: pointer;
     position: relative;
 }
+
+#problem{
+    margin-left: 115px;
+    margin-top: 15px;
+}
+#typeofproblem{
+    padding: 8px 10px 6px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background:#ce8b54 ;
+    
+}
+#typeofproblem1{
+    padding: 8px 10px 6px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background:#ce8b54 ;
+    margin-right: 222px;
+}
+
+
+#butonisubmit {
+background-color: #ce8b54; 
+border: none;
+color: white;
+padding: 15px 20px;
+
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+margin-left: 500px;
+margin-top: 10px;
+cursor: pointer;
+
+} 
+#butonisubmit:hover {
+box-shadow: 0 12px 16px 0 rgba(246, 142, 4, 0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

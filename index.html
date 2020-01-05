@@ -144,27 +144,93 @@
                </div>
                <a href="/login/login.html" style="float: right">Log In</a>
            </div>
-           <div class="image">
-               <div class="box1" style="flex: 1; padding-top: 60px;">
-                       <img src="IMG/aa2fe68152b9675bb4dec37eee032842.jpg">
-                       <img src="Img/high_quality_wallpaper_HD_1080_IDS_1156401.jpg">
-                       <img src="Img/close-up-of-gold-and-blue-macaw-perching-on-tree-962288862-5b50073e46e0fb0037c23c23.jpg">
-               </div>
-               <div class="box2" style="flex: 1;padding-top: 60px;">
-                      <p style="padding: 3px;">Ask a Vet Questions Online for Free</p>
-                   <textarea style="background: #ce8b54;" id="question"  rows="5" cols="50" placeholder="Type your question here..."></textarea>
-                   <form action="category">
-                     <input type="ra">
-                        <input type="text">
-                   </form>
-               </input>
-               </div>
-               <div class="box3" style="flex: 1; padding-top: 60px;">
-                       <img src="IMG/aa2fe68152b9675bb4dec37eee032842.jpg">
-                       <img src="Img/high_quality_wallpaper_HD_1080_IDS_1156401.jpg">
-                       <img src="Img/close-up-of-gold-and-blue-macaw-perching-on-tree-962288862-5b50073e46e0fb0037c23c23.jpg">
-               </div>
-           </div>
+           <div class="image" style="margin-top: 60px;">
+            <div class="box1" style="flex: 1">
+                    <img src="IMG/aa2fe68152b9675bb4dec37eee032842.jpg">
+                    <img src="Img/high_quality_wallpaper_HD_1080_IDS_1156401.jpg">
+                    <img src="Img/close-up-of-gold-and-blue-macaw-perching-on-tree-962288862-5b50073e46e0fb0037c23c23.jpg">
+            </div>
+            <div class="box2" style="flex: 1">
+                   <p style="padding: 3px; font-size: 33px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Ask a Vet Questions Online for Free</p>
+                <p style="padding: 4px; font-size:medium ; font-family:'Courier New', Courier, monospace">Verified pet experts standing by 24/7</p>
+                 
+                <p style="padding: 5px; font-size: medium; font-family:'Courier New', Courier, monospace"">Need advice but don’t have a veterinarian you can speak with? We’ve got you covered.</p> 
+                
+                
+         <form >
+                <textarea style="background: #ce8b54;" id="problem" rows="10" cols="47" placeholder="Type your question here..."></textarea>
+                <input id="butonisubmit" title="Sumbit your Answer" type="submit" value="Submit">
+                
+        </form>
+                
+                
+                <form action="category">
+                  
+                <select name="type-of-problem" id="typeofproblem" >
+                    <option value="-2" title="Hover on me!">Select category</option>
+                    <option value="2" title="Health">Health</option><option value="5" 
+                    title="Behavior" &="" training="">Behavior &amp; Training</option><option 
+                    value="7"  title="Nutrition">Nutrition</option><option 
+                    value="6"  title="Care">Care</option><option value="18" title="Breeds">Breeds</option><option
+                    value="11" title="Holistic" >Holistic Health Care</option><option 
+                    value="12" title="Natural" >Natural Pet Products</option><option 
+                    value="16" title="Product" >Product Recommendations</option><option 
+                    value="-1" title="Other">Other</option><option value="-1" title="Not sure">Not sure</option></select>
+                     
+                    
+            
+            
+    
+                     
+                </form>
+            </form>
+                
+                
+            <form action="priority">
+              
+            <select name="Priority" id="typeofproblem" >
+                <option value="-02" title="Select the priority of your question ,depending on the circumstances" >Select Priority</option>
+                <option value="20" title="Priority LOW">Low </option><option 
+                <option value="30" title="Priority MEDIUM">Medium</option><option  
+                <option value="40" title="Priority HIGH">High</option><option  
+                value="23" title="EMERGENCY!">Emergency!</option><option value="-1" title="Emergency!"></option></select>
+          </form>
+          <form action="priorityy">
+              
+            <select style="margin-right:660px;" name="type-of-problem" id="typeofproblem1" >
+                <option value="-03">Select Animal</option>
+                <option value="60" title="DOG care">Dog</option><option 
+                <option value="62" title="CAT care ">Cat</option><option  
+                <option value="83" title="PARROT care ">Parrot / Bird</option><option  
+                <option value="83" title="FISH care">Fish</option><option  
+                <option value="83" title="GUINEA PIG care">Guinea Pig</option><option  
+                value="23" title="SNAKE&LIZARDS care">Snakes & Lizards</option><option value="-1" title="Emergency!"></option></select>
+          </form>
+            </input>
+            </div>
+            <div class="box3" style="flex: 1">
+                    <img src="IMG/aa2fe68152b9675bb4dec37eee032842.jpg">
+                    <img src="Img/high_quality_wallpaper_HD_1080_IDS_1156401.jpg">
+                    <img src="Img/close-up-of-gold-and-blue-macaw-perching-on-tree-962288862-5b50073e46e0fb0037c23c23.jpg">
+            </div>
+        </div>
+     
+        <script>
+            document.querySelector("form").addEventListener("submit", (e) => {
+                e.preventDefault();
+    
+                const text = document.getElementById("problem").value;
+                if(text.length > 15) {
+                    alert("Answer Submitted.");
+                } else {
+                    alert("You need to type at least 15 characters!");
+                }
+            })
+        </script>
+        
+        
+    <p style=" font-family:Arial, Helvetica, sans-serif ; text-align: center; font-size: 16px; margin-top: 223px;">Please visit your nearest emergency clinic </p>
+    <p style="font-family:Arial, Helvetica, sans-serif ; text-align: center; font-size: 16px; margin-top: 30px;">right away if your pet is experiencing any of <a style="font-family:Arial, Helvetica, sans-serif ;" href="symtoms.html">these symptoms</a> </p>
     </div>
 </body>
 </html>

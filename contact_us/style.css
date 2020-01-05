@@ -58,3 +58,8 @@
     cursor: pointer;
     position: relative;
 }
+
+a:hover {
+    color: white !important;
+    text-decoration: none !important;
+}

@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+		<title>Postet</title>
+		<link rel="stylesheet" href="style.css">
+     <style>
+            * {
+                margin: 0px;
+                top: 0;
+                left: 0;
+                font-family: verdana;
+            }
+
+			.navbar {
+				width: 100%;
+				background: #ce8b54;
+				display: flex;
+				position: fixed;
+				z-index: 9;
+			}
+
+			.navbar a {
+				margin: 0px;
+				padding: 20px; 
+				font-size: 20px;
+				text-decoration: none;
+				color: #fff;
+				transition: 0.5s;
+				font-size: 17px;
+			}
+
+			.navbar .left {
+			padding-top: 20px;
+			margin: 0px;
+			flex: 1;
+			}
+
+			.left a {
+				padding: 17px;
+			}
+
+        </style>
+    </head>
+	</head>
+	<body>
+		<div class="first">
+			<button id="posts_btn">Contact Us</button>
+		</div>
+	<div class="second">
+		<div class="navbar">
+            <div class="left">
+				<a href="/home">Home</a>
+				<a href="/posts/">Posts</a>
+				<a href="/news/">News</a>
+				<a href="/contact_us/">Contact Us</a>
+			</div>
+			<a href="/login/login.html" style="float: right">Log In</a>
+		</div>
+		<br>
+		<div  style="margin-top: 50px;"></div>
+		<p><center><font size="10">CONTACT US</center></font></p>
+	
+		<p><font size="10">How to contact us?</font></p>
+		<p><font size="5"><font color="#20B2AA">Call us at any time, day or night</p>
+	
+		   <p><font size="5">
+		   <br><font color="#20B2AA">Whatever you are going through, 
+		   <br>you can email us any time, from any
+		   <br>country for FREE.</font>
+		   </p>
+		   
+		   <p>
+		   <br><font size="6">On: askus@gmail.com</font>
+		   </p>
+		   
+		   
+		   <p>
+		   <font size="5">
+		   <font color="#20B2AA">
+		   <br>We believe that prevention is better than cure,
+		   <br>and the best route to a long and healthy life,
+		   <br>that is why you should always contact us when
+		   <br>u see antyhing weird with ur pet to get advice
+		   <br>from pet experts, much better than waiting until
+		   <br>a pet is ill and suffering to put things right
+		   </p>
+		   </body>
+	
+		   </font
+		   </style>
+	
+		   <body>
+	<script>
+	function revealMessage() {
+		document.getElementById("hiddenMessage").style.display = 'block';
+	}
+	</script>
+	
+	
+		 <br><button onclick="revealMessage()">View our customer feedbacks</button>
+		 <p id="hiddenMessage" style="display:none">	   
+		  <br>  "Having a pet is fun, but also
+		   <br>  a big responsibility. Askus
+		   <br>  helps you with all your
+		   <br>  concerns and questions. Tons
+		   <br>  of content and great learning
+		   <br>  from vets and pet experts!
+		   <br>  Love it!!"
+		   <br>          By Glenda M. 
+		   <br>          1 week ago</p>
+	</body>
+	
+	
+		   <p><font color="#000000"><center><font size="10">About Us</center></font></p>
+		   <font size="6">Why us?</font>
+			<p>
+		   <font size="5">
+		   <font color="#20B2AA">
+		   <br>AskUs is an online group that can help you with any question about ur pet, fast,
+		   <br>easy and free.
+		   <br>We want to make preventive helthcare easy and affordable, to help you give
+		   <br>your much loved pet the best care possible,this is by providing an expert pet care
+		   <br>advice.
+		   <br>We believe that prevention is better than cure, and the best route to a long and
+		   <br>healthy life, much better than waiting until a pet is ill and suffering to put things
+		   <br>right.
+		   </p>
+		   </body>
+		   </font>
+	
+		   <img src="https://cdngeneral.rentcafe.com/dmslivecafe/UploadedImages/6dceca2c-c9a8-4963-abfc-7d9ea9663c7e.jpg">
+	<div id="all">
+		<div id="bar">
+			<div id="likes"></div>
+			<div id="dislikes"></div>
+		</div>
+		<input type="button" value="Like" id="likeButton" onclick="like();"/>
+		<input type="button" value="Dislike" id="dislikeButton" onclick="dislike();"/>
+	
+	</div>
+	</div>
+</body>
+ 
+ <script>
+ var likes=0, dislikes=0;
+
+//Functions to increase likes and immediately calculate bar widths
+function like(){
+	likes++;
+	calculateBar();
+}
+function dislike(){
+	dislikes++;
+	calculateBar();
+}
+
+//Calculates bar widths
+function calculateBar(){
+	var total= likes+dislikes;
+    //Simple math to calculate percentages
+	var percentageLikes=(likes/total)*100;
+	var percentageDislikes=(dislikes/total)*100;
+
+    //We need to apply the widths to our elements
+	document.getElementById('likes').style.width=percentageLikes.toString()+"%";
+	document.getElementById('dislikes').style.width=percentageDislikes.toString()+"%";
+    
+    //We add the numbers on the buttons, just to show how to
+    document.getElementById('likeButton').value="Like ("+likes.toString()+")";
+    document.getElementById('dislikeButton').value="Disike ("+dislikes.toString()+")";
+
+}
+
+calculateBar();
+</script>
+	   <br>
+	   <br>
+	   <br>
+
+	   <font size="6">Why we started?</font>
+
+	    <p>
+       <font size="5">
+	   <font color="#20B2AA">
+	   <br>Everyday, we at Askus see a lot of injured and sick pets who would not have
+	   <br>been in that position if their owners were a bit more educated on what to do
+	   <br>and how to properly take care of them.
+	   <br>Hence, we created this webpage to provide the service of educating pet owners 
+	   <br>on various pet care related topics.
+	   </p>
+	   </body>
+	   </font>
+
+	   <br>
+	   <img src="https://d3ciwvs59ifrt8.cloudfront.net/e754aca1-02a2-46b4-b9c1-e26fa0b87d13/ef288635-4d67-4397-957a-61f094dfe9cf.jpg">
+	   
+
+<br><head>
+<!-- Font Awesome Icon Library -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.checked {
+    color: orange;
+    
+}
+</style>
+</head>
+<body>
+
+
+<span onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:40px;cursor:pointer;"  class="fa fa-star checked"></span>
+<span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+<span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+<span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+<span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+<br/>
+<textarea  style="margin-top:5px;" class="form-control" rows="3" id="comment" placeholder="Enter your review for this article"></textarea>
+<button  onclick="result()" type="button" style="margin-top:10px;margin-left:5px;" class="btn btn-lg btn-success">SUBMIT</button>
+</body>
+<script>
+var count;
+function starmark(item)
+{
+count=item.id[0];
+sessionStorage.starRating = count;
+var subid= item.id.substring(1);
+for(var i=0;i<5;i++)
+{
+if(i<count)
+{
+document.getElementById((i+1)+subid).style.color="orange";
+}
+else
+{
+document.getElementById((i+1)+subid).style.color="black";
+}
+}
+}
+function result()
+{
+//Rating : Count
+//Review : Comment(id)
+alert("We will be looking on your review. \nYour Rating : "+count+"\nYour Review : "+document.getElementById("comment").value);
+}
+</script>
+
+<head>
+</head>
+
+
+
+</html>

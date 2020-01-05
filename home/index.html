@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0px;
+            top: 0;
+            left: 0;
+            font-family: verdana;
+        }
+
+        body {
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+        .navbar {
+    width: 100%;
+    background: #ce8b54;
+    display: flex;
+    position: fixed;
+    z-index: 9;
+}
+
+.navbar a {
+    margin: 0px;
+    padding: 20px; 
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 17px;
+}
+
+.navbar .left {
+   padding-top: 20px;
+   margin: 0px;
+   flex: 1;
+}
+
+.left a {
+    padding: 17px;
+}
+
+
+        p{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        }
+
+
+
+        .button {
+        background-color: gray;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        width: 300px;
+        height: 50px;
+
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        text-align: center;
+        
+        }
+
+        textarea {
+        padding-bottom: 50px;
+        }
+        .image{
+            max-width:50%;
+        min-width:100px;
+        max-height:500px;
+        min-height:21%;
+        }
+        .thee{
+            float: right;
+            padding:  1px 175px;
+            text-decoration: underline #ce8b54 ;
+        }
+        img {
+            width: 25vw;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .image {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100vw;
+        }
+
+        .box1 {
+            width: 25vw;
+        }
+
+        .box2 {
+            width: 49vw;
+            height: 100vh;
+           
+        }
+
+        .box3 {
+            width: 22vw;
+            flex: 1;
+        }
+
+        @media(max-width: 760px) {
+            .box1 {
+                width: 50vw;
+            }
+            img {
+                width: 50vw;
+            }
+            .box3 {
+                display: none;
+            }
+        }
+        #question{
+            margin-left: 115px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <button id="posts_btn">Home</button>
+    </div>
+    <div class="second">
+        <div class="navbar">
+            <div class="left">
+                   <a href="/home">Home</a>
+                   <a href="/posts/">Posts</a>
+                   <a href="/news/">News</a>
+                   <a href="/contact_us/">Contact Us</a>
+               </div>
+               <a href="#" style="float: right">Log In</a>
+           </div>
+           <div class="image">
+               <div class="box1" style="flex: 1; padding-top: 60px;">
+                       <img src="IMG/aa2fe68152b9675bb4dec37eee032842.jpg">
+                       <img src="Img/high_quality_wallpaper_HD_1080_IDS_1156401.jpg">
+                       <img src="Img/close-up-of-gold-and-blue-macaw-perching-on-tree-962288862-5b50073e46e0fb0037c23c23.jpg">
+               </div>
+               <div class="box2" style="flex: 1;padding-top: 60px;">
+                      <p style="padding: 3px;">Ask a Vet Questions Online for Free</p>
+                   <textarea style="background: #ce8b54;" id="question"  rows="5" cols="50" placeholder="Type your question here..."></textarea>
+                   <form action="category">
+                     <input type="ra">
+                        <input type="text">
+                   </form>
+               </input>
+               </div>
+               <div class="box3" style="flex: 1; padding-top: 60px;">
+                       <img src="IMG/aa2fe68152b9675bb4dec37eee032842.jpg">
+                       <img src="Img/high_quality_wallpaper_HD_1080_IDS_1156401.jpg">
+                       <img src="Img/close-up-of-gold-and-blue-macaw-perching-on-tree-962288862-5b50073e46e0fb0037c23c23.jpg">
+               </div>
+           </div>
+    </div>
+</body>
+</html>

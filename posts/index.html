@@ -62,6 +62,20 @@
             </div>
         </div>
         <a href="#top_top" id="top"><img src="./btn.png" style="left: 10px; height: 25px; width: 25px" /></a>
-        <script src="posts.js"></script>
+        <script>
+            const btn = document.getElementById("top");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                btn.style.opacity = 1;
+            } else {
+                btn.style.opacity = 0;
+            }
+            }
+
+            setTimeout(() => document.querySelector("body").style.overflow = "auto", 1000);
+        </script>
     </body>
 </html>

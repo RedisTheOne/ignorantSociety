@@ -11,7 +11,14 @@
                 font-family: verdana;
             }
 
-           
+           /* Box Model */
+          .div {
+             background-color: lightgrey;
+             width: 200px;
+             border: 15px solid blue;
+             padding: 50px;
+             margin: 20px;
+           }
         </style>
     </head>
     <body style="background-color:#ffd9b3;">
@@ -71,7 +78,8 @@ function yourFunction() {
 </script>
 <br>
 <br>
-    <center><img id="myImage" onclick="changeImage()" src="Like.jpeg" width="90" height="90">
+    <center><p class="div">
+<img id="myImage" onclick="changeImage()" src="Like.jpeg" width="90" height="90">
 
         <script>
         function changeImage() {
@@ -82,7 +90,14 @@ function yourFunction() {
         image.src = "Like.jpeg";
         }
         }
-        </script></center>
+        </script></p></center>
+        <br>
+        <center><button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+        <br>
+        <br>
+        <p id="demo"></p></center>
         <br>
         <br>
 </html>

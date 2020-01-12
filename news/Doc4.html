@@ -10,7 +10,14 @@
                 left: 0;
                 font-family: verdana;
             }
-
+            /* Box Model */
+            .div {
+             background-color: lightgrey;
+             width: 200px;
+             border: 15px solid blue;
+             padding: 50px;
+             margin: 20px;
+           }
            
         </style>
     </head>
@@ -27,6 +34,7 @@
     </body>
     <br>
     <center><h1 style="padding-top: 70px;">Thing as a Vegan Cat Diet?</h1></center>
+    <br>
     <br>
     <center><img src="cat3.jpg" width="1000" height="666"></center>
     <center><font size="4"><p>
@@ -78,7 +86,8 @@ function yourFunction() {
 </script>
 <br>
 <br>
-    <center><img id="myImage" onclick="changeImage()" src="Like.jpeg" width="90" height="90">
+    <center><p class="div">
+<img id="myImage" onclick="changeImage()" src="Like.jpeg" width="90" height="90">
 
         <script>
         function changeImage() {
@@ -89,7 +98,14 @@ function yourFunction() {
         image.src = "Like.jpeg";
         }
         }
-        </script></center>
+        </script></p></center>
+        <br>
+        <center><button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+        <br>
+        <br>
+        <p id="demo"></p></center>
         <br>
         <br>
 </html>
